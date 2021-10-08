@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+*
+{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(fond.jpg);
+    color: white;
+}
+.box_yt{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(44, 42, 42);
+    position: absolute;
+    top: 250px;
+    left: 40px; 
+}
+.box_insta{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(44, 42, 42);
+    position: absolute;
+    top: 250px;
+    left: 575px; 
+}
+.box_bs{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(44, 42, 42);
+    position: absolute;
+    top: 250px;
+    right: 40px; 
+}
+.box_yt::before,
+.box_yt::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(255, 136, 0),rgb(255, 4, 4),rgb(255, 38, 0),rgb(255, 81, 0),rgb(255, 0, 0),rgb(255, 0, 0));
+    width: 100%;
+    height: 100%;
+    background-size: 500%;
+    z-index: -1;
+    transform: scale(1.01);
+    animation: animate 20s infinite;
+}
+.box_yt::after{
+    filter: blur(20px);
+}
+@keyframes animate {
+    0% {background-position: 0 0;}
+    50% {background-position: 300% 0;}
+    100% {background-position: 0 0;}
+}
+
+.box_insta::before,
+.box_insta::after{
+    content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        background: linear-gradient(45deg, rgb(255, 0, 128),rgb(255, 146, 4),rgb(174, 0, 255),rgb(255, 0, 234),rgb(255, 166, 0),rgb(255, 0, 212));
+        width: 100%;
+        height: 100%;
+        background-size: 500%;
+        z-index: -1;
+        transform: scale(1.01);
+        animation: animate 20s infinite;
+    }
+    .box_insta::after{
+        filter: blur(20px);
+    }
+    @keyframes animate {
+        0% {background-position: 0 0;}
+        50% {background-position: 300% 0;}
+        100% {background-position: 0 0;}
+    }
+.box_bs::before,
+.box_bs::after{
+    content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        background: linear-gradient(45deg, rgb(255, 230, 0),rgb(238, 255, 4),rgb(255, 145, 0),rgb(187, 255, 0),rgb(255, 230, 0),rgb(238, 255, 0));
+        width: 100%;
+        height: 100%;
+        background-size: 500%;
+        z-index: -1;
+        transform: scale(1.01);
+        animation: animate 20s infinite;
+    }
+    .box_bs::after{
+        filter: blur(20px);
+    }
+    @keyframes animate {
+        0% {background-position: 0 0;}
+        50% {background-position: 300% 0;}
+        100% {background-position: 0 0;}
+    }
+    .go_yt{
+        color: white;
+        padding:10px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        top: 190px;
+        left: 160px;
+        font-size: 40px;
+        transition: 300ms;
+    }
+    .go_yt:hover{
+        background-color: rgb(248, 8, 0);
+    }
+
+    .go_insta{
+        color: white;
+        padding:10px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        top: 190px;
+        left: 160px;
+        font-size: 40px;
+        transition: 300ms;
+    }
+    .go_insta:hover{
+        background-color: rgb(174, 0, 255);
+    }
+    .go_bs{
+        color: white;
+        padding:10px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        top: 190px;
+        left: 160px;
+        font-size: 40px;
+        transition: 300ms;
+    }
+    .go_bs:hover{
+        background-color: rgb(255, 230, 0);
+    }
+   
+    .logo_reseau_yt{
+        font-size: 50px;
+        position: absolute;
+        left: 80px;
+        top:40px ;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .logo_reseau_insta{
+        font-size: 50px;
+        position: absolute;
+        left: 47px;
+        top:40px ;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+.logo_reseau_bs{
+        font-size: 50px;
+        position: absolute;
+        left: 50px;
+        top:40px ;
+        text-transform: uppercase;
+        font-weight: bold;
+ }
+.reseau_h1{
+    position: absolute;
+    font-size: 90px;
+    top: 10px;
+    left: 570px;
+}
