@@ -35,7 +35,7 @@ body{
     background-color: rgb(44, 42, 42);
     position: absolute;
     top: 250px;
-    right: 40px; 
+    left: 1110px; 
 }
 .box_yt::before,
 .box_yt::after{
